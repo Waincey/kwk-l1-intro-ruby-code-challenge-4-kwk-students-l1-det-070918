@@ -1,14 +1,14 @@
 def least_coins(cents)
-  least_coins = {:quarters=> 0.25, :dimes=> 0.10, :nickels=> 0.05, :pennies=>0.01} 
+  least_coins = {:quarters=> 0, :dimes=> 0, :nickels=> 0, :pennies=>0} 
+  
 while cents >= 25 
- :quarter += 1
- cents - 25
- puts cents 
+ least_coins[:quarters]+= 1
+ cents -= 25
 end
 
 while cents >= 10 
-:dime += 1
-cents - 10
+least_coins[:dime] += 1
+cents -= 10
 puts cents 
 end
 
