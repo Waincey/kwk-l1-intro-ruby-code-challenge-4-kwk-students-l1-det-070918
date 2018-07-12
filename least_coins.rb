@@ -22,5 +22,3 @@ cents -= 1
 end 
 return least_coins
 end 
-
-least_coins()
