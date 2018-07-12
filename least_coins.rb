@@ -16,9 +16,13 @@ least_coins[:nickels] += 1
 cents -= 5 
 end
 
+least_coins[:pennies] = cents
+return least_coins
+end
+
 # while cents >0
 # least_coins[:pennies] += 1
 # cents -= 1
 # end 
-return least_coins
-end 
+# return least_coins
+# end 
