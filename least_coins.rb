@@ -19,7 +19,7 @@ end
 while cents >= 1
 least_coins[:pennies] += 1
 cents -= 1
-return cents
+return least_coins
 end 
 end 
 
