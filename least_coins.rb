@@ -6,8 +6,24 @@ while cents >= 25
  :quarter += 1
  cents - 25
  puts cents 
-  elsif cents 
-else 
-
 end
+
+while cents >= 10 
+:dime += 1
+cents - 10
+puts cents 
+end
+
+while cents >= 5
+:nickels += 1
+cents - 5 
+puts cents
+end
+
+while cents >= 1
+:pennies += 1
+puts cents 
+end 
+end 
+
 least_coins(29)
