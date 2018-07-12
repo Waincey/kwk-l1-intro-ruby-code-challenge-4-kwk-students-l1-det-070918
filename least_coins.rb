@@ -9,19 +9,17 @@ end
 while cents >= 10 
 least_coins[:dime] += 1
 cents -= 10
-puts cents 
 end
 
 while cents >= 5
-:nickels += 1
-cents - 5 
-puts cents
+least_coins[:nickels] += 1
+cents -= 5 
 end
 
 while cents >= 1
-:pennies += 1
-cents - 1
-puts cents 
+least_coins[:pennies] += 1
+cents -= 1
+return cents
 end 
 end 
 
